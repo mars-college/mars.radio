@@ -2,9 +2,8 @@ title: Mars Radio
 markdown: kramdown
 email: gene@genekogan.com
 description: >- 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Mars Radio is an educational initiative and community focused on 
+  cultivating a low-cost, high-tech lifestyle.
 baseurl: "" 
 url: "mars.radio"
 twitter_username: genekogan
@@ -19,12 +18,13 @@ collections:
     permalink: /:path/
 
 sass:
-  sass_dir:          _scss
-  style:            :compressed
+  sass_dir: _scss
+  style: :compressed
   
 plugins:
   - jekyll-feed
 
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

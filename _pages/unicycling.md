@@ -5,5 +5,6 @@ title: Unicycling
 
 <h1>{{ page.title }}</h1>
 
-more soon
+Some unicycling pictures.
 
+![unicyling](/images/unicycles_on_mars.jpg)
