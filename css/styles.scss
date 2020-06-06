@@ -1,0 +1,19 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'modules/resets.scss';
+@import 'modules/mixins.scss';
+@import 'modules/variables.scss';
+@import 'modules/typography.scss';
+@import 'modules/header.scss';
+
+/* Pages */
+html{
+        background-color:$black;
+}
+body > article{
+        margin-top:$headerHeight;
+}
+@import 'pages/splash.scss';
+@import 'pages/syllabus.scss';
