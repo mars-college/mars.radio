@@ -1,0 +1,70 @@
+@include font-face(ssSocialCircle, "fonts/SS-Social-Circle/ss-social-circle", regular, null, eot ttf svg);
+@include font-face(ssSocial, "fonts/SS-Social/ss-social-regular", regular, null, eot ttf svg);
+@include font-face(ssBlock, "fonts/SS-Block/ss-block", regular, null, eot ttf svg);
+@include font-face(sourceSansProLight, "fonts/Source-Sans-Pro/source-sans-pro-light", light, null, eot woff2 woff ttf svg);
+@include font-face(sourceSansProBold, "fonts/Source-Sans-Pro/source-sans-pro-bold", light, null, eot woff2 woff ttf svg);
+@include font-face(sourceSansProReg, "fonts/Source-Sans-Pro/source-sans-pro-regular", regular, null, eot woff2 woff ttf svg);
+@include font-face(alphaHeadline, "fonts/AlphaHeadline/alpha-headline-regular", regular, null, eot woff2 woff ttf svg);
+@include font-face(alphaHeadlineBold, "fonts/AlphaHeadline/alpha-headline-bold", regular, null, eot woff2 woff ttf svg);
+@include font-face(data, "fonts/data_70", regular, null, ttf svg);
+
+*{}
+a{}
+p{}
+small{}
+strong{}
+h1{}
+h2{}
+h3{}
+h4{}
+
+h1{
+        font-family:alphaHeadline;
+        font-size:32px;
+        margin-bottom: 20px;
+        line-height:50px;
+}
+h2{
+        font-family:alphaHeadline;
+        font-size:24px;
+        line-height: 38px;
+        margin-bottom:15px;
+}
+h3{
+        font-family:alphaHeadline;
+        font-size:20px;
+        margin-bottom:10px;
+}
+p{
+        //max-width:600px;
+}
+p, li{
+        font-family:alphaHeadline;
+        font-size:18px;
+        line-height: 28px;
+}
+.btn{
+        &:hover{
+                cursor:pointer;
+        }
+}
+.btn-large{
+        font-family:sourceSansProReg;
+        text-transform: uppercase;
+        letter-spacing:0.02em;
+        padding:15px 30px;
+        font-size:24px;
+        border-radius:3px;
+}
+*{
+        font-family:sourceSansProReg;
+}
+.icon-social{
+        font-family:ssSocial;
+}
+.icon-circle{
+        font-family:ssSocialCircle;
+}
+.icon{
+        font-family:ssBlock;
+}

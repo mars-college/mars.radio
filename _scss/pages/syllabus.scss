@@ -1,0 +1,63 @@
+$outline:5px;
+$outlineinverse:-5px;
+#Syllabus{
+        .calendar{
+                @include flexbox();
+                @include flex-direction(column);
+                @include flex-wrap(nowrap);
+                .calendar-week{
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include flex-wrap(nowrap);
+                }
+        }
+        .lesson{
+                height:400px;
+                width:20%;
+                position:relative;
+                .hover-content{
+                        opacity:0;
+                }
+                &:hover{
+                        .hover-content{
+                                opacity:1;
+                        }
+                }
+        }
+}
+
+ // .calendar-week{
+        //         &:nth-child(1){
+        //                 .lesson{
+        //                         &:first-child{
+        //                                 border:$outline solid $black;
+        //                         }
+        //                         &:not(:first-child){
+        //                                 border-top:$outline solid $black;
+        //                                 border-right:$outline solid $black;
+        //                                 border-bottom:$outline solid $black;
+
+        //                         }
+        //                         date{}
+        //                         h2{}
+        //                 }
+        //         }
+        //         &:not(:first-child){
+        //                 .lesson{
+        //                         &:first-child{
+        //                                 border-left:$outline solid $black;
+        //                                 border-bottom:$outline solid $black;
+        //                                 border-right:$outline solid $black;
+        //                         }
+        //                         &:not(:first-child){
+        //                                 border-right:$outline solid $black;
+        //                                 border-bottom:$outline solid $black;
+
+        //                         }
+        //                         date{}
+        //                         h2{}
+        //                 }
+
+        //         }
+                
+        // }

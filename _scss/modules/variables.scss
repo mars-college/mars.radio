@@ -1,0 +1,24 @@
+// V A R I A B L E S // 
+$headerHeight:100px;
+$shortHeaderHeight:60px;
+@mixin background-image($url){
+                background-image: url($url);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: 50% 50%;
+}
+// C O L O R S //
+$black: #000;
+$white: #fff;
+
+$sunset: #db5549;
+$red: #d60200;
+$brick: #ba0200;
+$burgundy: #8d021f;
+
+$beige: #ffd2ad;
+$beige: #fff1e6;
+
+$pink: #e54ed0;
+
+$ltblue:#71c8f0;

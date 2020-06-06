@@ -13,6 +13,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:path/
+  classes:
+    output: true
+    permalink: /classes/:path/
   pages:
     output: true
     permalink: /:path/

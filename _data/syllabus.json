@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Overview of steps in project",
+		"date": "Jun 21 2020",
+		"summary": [
+			"Plan what your project might look like",
+			"Summary point 2"
+		]
+	},{
+		"title": "Learn some origami and frame",
+		"date": "Jun 22 2020",
+		"summary": [
+			"Make the frame and lamp shade",
+			"Summary point 2"
+		]
+	},{
+		"title": "Learn to create Blinky using arduino",
+		"date": "Jun 23 2020",
+		"summary": [
+			"Basics of Arduino mess with blnky",
+			"Summary point 2"
+		]
+	},{
+		"title": "Cutting LED strip and soldering / electronics",
+		"date": "Jun 24 2020",
+		"summary": [
+			"create a 5 LED strip and attach to arduino",
+			"Summary point 2"
+		]
+	},{
+		"title": "Programing using Arduino install FastLED",
+		"date": "Jun 25 2020",
+		"summary": [
+			"create animation patterns",
+			"Summary point 2"
+		]
+	},{
+		"title": "Powering using Solar, basics of power and solar",
+		"date": "Jun 28 2020",
+		"summary": [
+			"create arduino LED setup using solar components",
+			"Summary point 2"
+		]
+	},{
+		"title": "Using other sensors, light, sound",
+		"date": "Jun 29 2020",
+		"summary": [
+			"install light sensor"
+		]
+	},{
+		"title": "Make the final project and trouble shoot",
+		"date": "Jun 30 2020",
+		"summary": [
+			"summary point 1",
+			"summary point 2"
+		]
+	},{
+		"title": "Q and A / hands on time",
+		"date": "Jul 1 2020",
+		"summary": [
+			"summary point 1",
+			"summary point 2"
+		]
+	},{
+		"title": "Final showcase with peers",
+		"date": "Jul 2 2020",
+		"summary": [
+			"summary point 1",
+			"summary point 2"
+		]
+	}
+]

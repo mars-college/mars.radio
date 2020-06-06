@@ -1,0 +1,44 @@
+.header{
+        position:fixed;
+        top:0;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+        height:$headerHeight;
+        background-color:$black;
+        width:100%;
+        z-index:1000;
+        transition:all .5s ease;
+
+        &.shrink{
+                height:$shortHeaderHeight;
+                h1{
+                        font-size:30px;
+                }
+        }
+        
+        h1{
+                font-family:data;
+                font-size:50px;
+                text-transform: uppercase;
+                margin:0;
+                margin-top:20px;
+                color:$white;
+        }
+        .hamburger{
+                display: none;
+                font-size:20px;
+                color:$white;
+                padding:20px 30px 20px 10px;
+                z-index: 1000;
+        }
+        @include phone{
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(center);
+                &.active{
+                        color:$white;
+                }
+        }
+}
