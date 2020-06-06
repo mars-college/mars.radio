@@ -1,12 +1,12 @@
-@include font-face(ssSocialCircle, "fonts/SS-Social-Circle/ss-social-circle", regular, null, eot ttf svg);
-@include font-face(ssSocial, "fonts/SS-Social/ss-social-regular", regular, null, eot ttf svg);
-@include font-face(ssBlock, "fonts/SS-Block/ss-block", regular, null, eot ttf svg);
-@include font-face(sourceSansProLight, "fonts/Source-Sans-Pro/source-sans-pro-light", light, null, eot woff2 woff ttf svg);
-@include font-face(sourceSansProBold, "fonts/Source-Sans-Pro/source-sans-pro-bold", light, null, eot woff2 woff ttf svg);
-@include font-face(sourceSansProReg, "fonts/Source-Sans-Pro/source-sans-pro-regular", regular, null, eot woff2 woff ttf svg);
-@include font-face(alphaHeadline, "fonts/AlphaHeadline/alpha-headline-regular", regular, null, eot woff2 woff ttf svg);
-@include font-face(alphaHeadlineBold, "fonts/AlphaHeadline/alpha-headline-bold", regular, null, eot woff2 woff ttf svg);
-@include font-face(data, "fonts/data_70", regular, null, ttf svg);
+@include font-face(ssSocialCircle, "/fonts/SS-Social-Circle/ss-social-circle", regular, null, eot ttf svg);
+@include font-face(ssSocial, "/fonts/SS-Social/ss-social-regular", regular, null, eot ttf svg);
+@include font-face(ssBlock, "/fonts/SS-Block/ss-block", regular, null, eot ttf svg);
+@include font-face(sourceSansProLight, "/fonts/Source-Sans-Pro/source-sans-pro-light", light, null, eot woff2 woff ttf svg);
+@include font-face(sourceSansProBold, "/fonts/Source-Sans-Pro/source-sans-pro-bold", light, null, eot woff2 woff ttf svg);
+@include font-face(sourceSansProReg, "/fonts/Source-Sans-Pro/source-sans-pro-regular", regular, null, eot woff2 woff ttf svg);
+@include font-face(alphaHeadline, "/fonts/AlphaHeadline/alpha-headline-regular", regular, null, eot woff2 woff ttf svg);
+@include font-face(alphaHeadlineBold, "/fonts/AlphaHeadline/alpha-headline-bold", regular, null, eot woff2 woff ttf svg);
+@include font-face(data, "/fonts/data_70", regular, null, ttf svg);
 
 *{}
 a{}
