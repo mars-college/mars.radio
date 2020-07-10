@@ -19,6 +19,20 @@
 		<!-- <script src="/js/scripts.js"></script> -->
 	</head>
 	<body>
+        <header class="main_header">
+            <a class="hamburger" href="#">&#9776;</a>
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="/martians">Martians</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/form">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <a href="/index.html">Cyber Arts Camp</a>
+            </h1>
+        </header>
 		{{content}}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="/js/jquery.fitvids.js"></script>
