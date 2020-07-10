@@ -3,29 +3,6 @@ layout: default
 title: Cyber Arts Camp
 ---
 
-<header class="main_header">
-        <a class="hamburger" href="#">&#9776;</a>
-        <nav class="main_nav">
-                <ul>
-                        <li>
-                                <a href="/martians.html">Martians</a>
-                        </li>
-                        <li>
-                                <a href="/syllabus.html">Syllabus</a>
-                        </li>
-                        <li>
-                                <a href="/faq.html">FAQ</a>
-                        </li>
-                        <li>
-                                <a href="/form.html">Contact</a>
-                        </li>
-                </ul>
-        </nav>
-        <h1>
-                <a href="/index.html">Cyber Arts Camp</a>
-        </h1>
-</header>
-
 <article id="Splash">
         <section class="splash_intro">
                 <h1><span>Learn cutting edge technology and sustainability through art.</span></h1>
