@@ -4,7 +4,7 @@ title: Cyber Arts Camp
 ---
 
 <article id="Form">
-                <div class="group text">      
+        <div class="group text">      
                 <input type="text" required>
                 <label>First name</label>
         </div>

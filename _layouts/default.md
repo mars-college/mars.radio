@@ -10,7 +10,7 @@
                 gtag('config', 'UA-172226953-1');
         </script>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 		<title>{{page.title}}</title>
 		<link rel="stylesheet" type="text/css" href="/css/styles.css">
 		<!-- <link rel="icon" href="/images/favicon.png"> -->

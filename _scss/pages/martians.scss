@@ -1,7 +1,7 @@
 #Martians{
         @include flexbox();
         @include flex-direction(column);
-        @include background-image('/img/texture-stars-0.jpg');
+        @include background-image('/img/texture-stars.jpg');
         padding:8% 0.5%;
         h1{
                 @include data-header;

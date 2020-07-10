@@ -7,6 +7,8 @@ title: Cyber Arts Camp
         <header>
                 <h1>Intro</h1>
         </header>
+
+        
         Thank you for joining us and helping on our mission to colonize and bring art to Mars. This will be a two week program where we will teach you everything you need to build your very own solar powered programmed light sculpture!
         
         Welcome Martians!

@@ -23,7 +23,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-dikhroo.jpg">
+                        <img src="/img/coach-kir.jpg">
                         <div class="text">
                                 <h2>Kir</h2>
                                 <span>planet dikhroos</span>
@@ -47,7 +47,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-gene.png">
+                        <img src="/img/coach-gene.jpg">
                         <div class="text">
                                 <h2>Gene</h2>
                                 <span>planet fractopia</span>
