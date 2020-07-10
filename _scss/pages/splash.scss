@@ -10,36 +10,28 @@
         h1{
                 text-align: center;
                 max-width:800px;
-                font-size:50px;
-                line-height: 76px;
-                max-width:1200px;
+                font-size:40px;
+                line-height:50px;
+                max-width:900px;
                 letter-spacing:0.03em;
+                @include phone{
+                        font-size:30px;
+                        line-height:42px;
+                }
         }
         h2{
                 max-width:1200px;
-                font-family: data;
-                font-size:80px;
-                text-transform:uppercase;
-                text-align:center;
-                padding-top:25px; //font fix
-                margin-bottom:8%;
+                @include data-header;
+        }
+        h2 span{
+                font-family:data;
         }
         h3{
                 font-size:30px;
                 font-family:alphaHeadlineBold;
                 text-transform: uppercase;
-        }
-        p{
-                font-size:28px;
-                line-height: 40px;
-                max-width:1200px;
                 @include phone{
-                        font-size:34px;
-                        line-height: 44px;
-                }
-                @include desktop{
-                        font-size:20px;
-                        line-height: 36px;
+                        font-size:22px;
                 }
         }
         section{
@@ -49,9 +41,18 @@
                 @include justify-content(center);
                 @include align-items(center);
                 padding: 8% 0.5%;
+                min-height:100vh;
                 @include phone{
-                        padding: 8% 1%;
+                        padding: 8% 10px;
+                        &.splash_lessons,
+                        &.splash_faq{
+                                background-repeat:repeat;
+                                background-size:auto;
+                        }
                 }
+        }
+        @include phone{
+                overflow:hidden;
         }
         /* ~~~~~~~~~~~~~~~~~~~~
         ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ
@@ -70,31 +71,28 @@
                 // (opt) Add box shadow
                 h1 span,
                 p span{
-                        background-color:$black;
-                        box-shadow:0 0 10px 10px $black; 
+                        background-color:rgba(0, 0, 0, 0.5);
+                        box-shadow:0 0 10px 10px rgba(0, 0, 0, 0.5); 
+                }
+                h1,p{
+                        padding:0 5%;
                 }
                 p{
-                        font-size:32px;
-                        line-height:50px;
                         text-align: center;
-                        margin-top:40px;
                         letter-spacing: 0.03em;
-                        @include phone{
-                                font-size:36px;
-                                line-height:48px;
-                        }
-                        @include tablet{
-                                max-width:800px;
+                        margin-bottom: 5%;
+                        @include p-large();
+                }
+                @include phone{
+                        h1 span,
+                        p span{
+                                background-color:rgba(0, 0, 0, 0.5);
+                                box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.5); 
                         }
                 }
-                 @include phone{
-                        h1, p{
-                                background-color:rgba(0, 0, 0, 0.5);
-                        }
-                 }
         }
         .splash_lessons{
-                @include background-image("/img/aluminum_foil.jpg");
+                @include background-image("/img/texture-aluminum-foil.jpg");
                 h2{
                         color:$white;
                         text-shadow:7px 7px $black;
@@ -107,44 +105,46 @@
                         li{
                                 @include flexbox();
                                 position:relative; // needed to absolutely position texts boxes on hover
+                                background-color:$black;
+                                color:$white;
+                                overflow:hidden;
+                                &:nth-of-type(4n + 1){
+                                        color:$black;
+                                        background-color:$white;
+                                        // background: #f475f4; /* Old browsers */
+                                        // background: -moz-linear-gradient(-45deg, #f475f4 0%, #7db9e8 100%); /* FF3.6-15 */
+                                        // background: -webkit-linear-gradient(-45deg, #f475f4 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+                                        // background: linear-gradient(135deg, #f475f4 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f475f4', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                                        p{ 
+                                                opacity:1;
+                                                background-color:transparent;
+                                        }
+                                }
+                                p{
+                                        transition:opacity 0.5s ease;
+                                }
                         }
-
-
                         @include phone{
                                 @include flex-direction(column);
                                 @include flex-wrap(nowrap);
+                                h2{
+                                        text-shadow:5px 5px $black;
+                                }
                                 li{
                                         @include flex-direction(column);
-                                        margin-bottom:1%;
+                                        margin-bottom:20px;
                                         img{
                                                 height:100%;
                                                 width:100%;
                                         }
-                                        &:nth-of-type(4n + 1){
-                                                .text{
-                                                        background-color:$black;
-                                                        color:$white;
-                                                        p{
-                                                                background-color:$black;
-                                                        }
-                                                }
-                                        }
-                                        .text{
-                                                padding: 20px;
-                                                background-color:$white;
+                                        h3{
+                                               padding:25px 25px 5px;
+                                               margin:0;
                                         }
                                         p{
-                                                font-size:16px;
-                                                line-height: 35px;
-                                        }
-
-                                }
-                        }
-                        @media (min-width:800px) and (max-width:1023px){
-                                li{
-                                        @include flex-direction(row);
-                                        img{
-                                                width:300px;
+                                                padding:0 25px 25px;
+                                                margin-bottom:0; //reset
                                         }
                                 }
                         }
@@ -159,20 +159,10 @@
                                         width:32.5%;
                                         margin:0 0.1% 0.5%;
                                         &:hover{
-                                               .text p{
-                                                        opacity:0.90;
+                                               p{
+                                                        opacity:1;
                                                 } 
-                                        }
-                                        // Cluster of 4, selecting first item
-                                        &:nth-of-type(4n + 1){
-                                                .text{
-                                                        color:$black;
-                                                        p{
-                                                                background-color:$white;
-                                                                opacity:1;      
-                                                        }
-                                                }
-                                        }
+                                        }                                       
                                         img{
                                                 width:100%;
                                                 height:300px;
@@ -182,19 +172,10 @@
                                                 background-position: center;
                                                 flex:1;
                                         }
-                                        .text{
-                                                position:absolute;  
-                                                height:100%;
-                                                width:100%;
-                                                transition:all 500ms;
-                                                padding:30px;
-                                                color:$white;
-                                        }
                                         h3{
                                                 position:absolute;
                                                 top:9%; left:9%;
                                                 z-index:50;
-                                                margin-bottom:20px;
                                                 letter-spacing:0.03em;
                                         }
                                         p{      
@@ -205,57 +186,41 @@
                                                 background-color:$black;
                                                 padding:20% 9%;
                                                 opacity:0;
-                                                font-size:21px;
-                                                line-height:33px;
                                         } 
                                 }
                         }
                 }
         }
-        .splash_faq{
-                @include background-image("/img/texture-bubbles.jpg");
-                h2{
-                        text-shadow:7px 7px $white;
+       
+        .splash_becomeamartian{
+                @include background-image("/img/texture-neon.png");
+                min-height:70vh;
+                h2 { 
+                        font-size:150px;
+                        letter-spacing: 0.03em;
+                        text-align: justify;
+                        line-height:200px;
+                        text-shadow: 4px 4px $pink;
                 }
-                ul{
-                        max-width:1000px;
-                        margin:0 auto;
-                        li{
-                                font-size:28px;
-                                margin-bottom:6px;
-                                padding-left:20px;
-                                background-color:$white;
-                                padding:20px;
-                                &:before{
-                                        content:"•";
-                                        margin-left:-20px;
-                                }
+                p{
+                        @include p-large();
+                        padding-left:200px;
+                }
+                .splash_becomeamartian_btn{
+                        @include tablet{
+                                margin-bottom:60px;
+                                margin-left:500px;
                         }
-               }
-        }
-         .splash-request-btn{
-                background-color:$pink;
-                transition:all 0.5s ease;
-                color:$white;
-                font-family:alphaHeadline;
-                font-size:60px;
-
-                &:hover{
-                        background-color: $sunset;
                 }
         }
         .splash_about{
-                @include background-image("/img/texture-crystals.png");
+                @include background-image("/img/texture-mars.jpg");
                 h2{
-                        color:$ltblue;
                 }
                 p{
-                        padding:20px;
-                        background-color:$black;
-                        color:$ltblue;
-                        font-size:20px;
-                        line-height: 38px;
-                        width:600px;
+                        max-width:800px;
+                        text-align:center;
+                        @include p-large();
                 }
                 
         }

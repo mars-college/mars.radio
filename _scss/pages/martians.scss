@@ -1,0 +1,55 @@
+#Martians{
+        @include flexbox();
+        @include flex-direction(column);
+        @include background-image('/img/texture-stars-0.jpg');
+        padding:8% 0.5%;
+        h1{
+                @include data-header;
+        }
+        ul{
+                @include flexbox();
+                @include flex-wrap(wrap);
+                li{ 
+                        @include flexbox();
+                        @include flex-direction(column);
+                        margin-bottom:5%; 
+                        padding:0 0.5%;
+                        .text{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include align-items(center);
+                                padding:20px;
+                                background-color:rgba(0,0,0,.6);
+                                color:$white;
+                                height:100%;
+                                h2, 
+                                span{
+                                        text-align: center;
+                                }
+                        }
+                        h2{
+                                margin:15px 0 0 0;
+                                text-transform: uppercase;
+                        }
+                        span{
+                                margin-bottom:15px;
+                        }
+                        img{
+                                max-width:100%;
+                        }
+                }
+        }
+        @include tablet{
+                li{
+                       
+                        width:33.33%;
+                }
+                
+        }
+        @include phone{
+                li{
+                        // @include flexbox();
+                        // @include flex-direction(row);
+                }
+        }
+}

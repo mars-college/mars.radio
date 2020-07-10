@@ -1,44 +1,146 @@
-.header{
+.main_header{
         position:fixed;
         top:0;
         @include flexbox();
         @include flex-direction(row);
-        @include justify-content(center);
+        @include justify-content(space-around);
         @include align-items(center);
-        height:$headerHeight;
         background-color:$black;
         width:100%;
         z-index:1000;
-        transition:all .5s ease;
-
-        &.shrink{
-                height:$shortHeaderHeight;
-                h1{
-                        font-size:30px;
-                }
-        }
+        transition:all 0.5s ease;
+        height:$headerHeight;
         
         h1{
-                font-family:data;
-                font-size:50px;
+                font-size: 30px;
+                line-height: $headerHeight;
                 text-transform: uppercase;
                 margin:0;
-                margin-top:20px;
-                color:$white;
+                position:absolute;
+                letter-spacing: 0.03em;
+                padding-top:13px;
+                a{
+                        transition:all 0.5s ease;
+                        color:$white;
+                        font-family:data;
+                }
+                &:hover{
+                        a{
+                                color:$highlight;
+                        }
+                }
+        }
+        .main_nav{
+                @include flexbox();
+                @include flex-direction(row);
+                @include align-items(center);
+                position:relative;
+                width:100%;
+                a{
+                        white-space: nowrap;
+                        font-family: alphaHeadline;
+                        text-transform: uppercase;
+                        color:$white;
+                        transition:all 0.5s ease;
+                        letter-spacing: 0.02em;
+                        &.active{
+                                color:$highlight;
+                        }
+                }
+               
         }
         .hamburger{
                 display: none;
-                font-size:20px;
-                color:$white;
-                padding:20px 30px 20px 10px;
-                z-index: 1000;
+        }
+        @include tablet{
+                nav{
+                        height:100%;
+                }
+                h1{
+                        left:20px;
+                }
+                ul{
+                        width:100%;
+                        height: 100%;
+                        display:block;
+                        @include flexbox();
+                        @include justify-content(flex-end);
+                        li{
+                                @include flexbox();
+                                @include align-items(center);
+                                height:100%;
+                                padding-right:20px;
+                        }
+                }
+                a{
+                        height:100%;
+                        @include flexbox();
+                        @include align-items(center);
+                        height: 100%;
+                        &:hover{
+                                color:$highlight;
+                        }
+                }
         }
         @include phone{
-                @include flexbox();
-                @include flex-direction(column);
-                @include justify-content(center);
-                &.active{
+                height:$headerHeight;
+                .hamburger{
+                        display: block;
+                        position:absolute;
+                        right:10px;
+                        font-size:30px;
                         color:$white;
+                        z-index: 1000;
+                        transition: all 0.5s ease;
+                        &:hover{
+                                color:$highlight;
+                        }
+                        &.active{
+                                color:$quartz;
+                        }
+                }
+                h1{
+                        left:10px;
+                }
+                .main_nav{
+                        position:absolute;
+                        top:$headerHeight;
+                        left:0;
+                        width:100%;
+                        height:calc(100vh - 80px);
+                        z-index:2000;
+                        display: none;
+                        background-color:$black;
+                        padding-bottom:60px;
+                        opacity:0;
+                        transition:all 0.5s ease;
+                        overflow-y:scroll;
+                        -webkit-overflow-scrolling:touch;
+                        border-top:1px solid $white;
+                        &.active{
+                                opacity:1;
+                        }
+                        ul{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                li{
+                                        @include flexbox();
+                                        @include flex-direction(column);
+                                        height:100px;
+                                        @include align-items(center);
+                                        @include justify-content(center);
+                                        border-bottom:1px solid $white;
+                                        text-align: center;
+                                        a{
+                                                @include flexbox();
+                                                @include flex-direction(row);
+                                                 @include align-items(center);
+                                                @include justify-content(center);
+                                                height:100%;
+                                                width:100%;
+                                        }
+                                }
+                        }
                 }
         }
 }

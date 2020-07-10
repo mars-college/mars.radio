@@ -1,11 +1,14 @@
 // V A R I A B L E S // 
-$headerHeight:100px;
-$shortHeaderHeight:60px;
+$headerHeight:60px;
 @mixin background-image($url){
                 background-image: url($url);
+                background-repeat: no-repeat;
+                background-position: center center; // centered vertically and horizontally at all times
                 background-size: cover;
-                background-attachment: fixed;
-                background-position: 50% 50%;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/post_bg.jpg',    sizingMethod='scale')";
 }
 // C O L O R S //
 $black: #000;
@@ -22,3 +25,7 @@ $beige: #fff1e6;
 $pink: #e54ed0;
 
 $ltblue:#71c8f0;
+
+$quartz:#C9C2F7;
+
+$highlight: #ff1769;

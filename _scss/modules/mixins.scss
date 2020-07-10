@@ -145,13 +145,10 @@
   @media (max-width: 480px) { @content; }
 }
 @mixin phone {
-  @media (max-width: 1023px) { @content; }
+  @media (max-width: 899px) { @content; }
 }
 @mixin tablet {
-  @media (min-width: 1024px) { @content; }
-}
-@mixin tablet-only{
-        @media (min-width: 1024px) and (max-width:1200px) { @content; }
+  @media (min-width: 900px) { @content; }
 }
 @mixin desktop {
   @media (min-width: 1200px) { @content; }

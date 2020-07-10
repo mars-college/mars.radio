@@ -1,63 +1,131 @@
 $outline:5px;
 $outlineinverse:-5px;
 #Syllabus{
+        background-color:$white;
+        height:100%;
         .calendar{
                 @include flexbox();
                 @include flex-direction(column);
                 @include flex-wrap(nowrap);
-                .calendar-week{
-                        @include flexbox();
-                        @include flex-direction(row);
-                        @include flex-wrap(nowrap);
-                }
+        }
+        .calendar-header{
+                display: none;
         }
         .lesson{
-                height:400px;
-                width:20%;
-                position:relative;
-                .hover-content{
-                        opacity:0;
-                }
+                transition: all 0.5s ease;
                 &:hover{
-                        .hover-content{
-                                opacity:1;
+                        //background-color:$quartz;
+                        cursor:pointer;
+                }
+                color:$black;
+        }
+        
+        @include tablet(){
+                .calendar{
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include flex-wrap(wrap);
+                        height:calc(100% - 40px); // subtract calendar header height
+                }
+                .calendar-header{
+                        height:40px;
+                        width:100%;
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include align-items(center);
+                        border-bottom:1px solid $black;
+                        span{
+                                @include flex-basis(20%);
+                                text-align: center;
+                        }
+                }
+                .lesson{
+                        @include flexbox();
+                        @include flex-direction(column);
+                        @include flex-basis(20%);
+                        width:20%;
+                        position:relative; // needed to absolutely position full frame link
+                        height:400px;
+                        padding:2%;
+                        border-left:2px solid $black;
+                        border-bottom:2px solid $black;
+                        height:50%;
+                        header{
+                                @include flexbox();
+                                @include flex-direction(row);
+                                @include justify-content(space-between);
+                                white-space: nowrap;
+                                span,
+                                date{
+                                        font-family: alphaHeadline;
+                                        text-transform:uppercase;
+                                        @include small();
+                                }
+                        }
+                        h2{
+                                text-align:center;
+                                margin:10px 0;
+                        }
+                        .lesson-class_link{
+                                position:absolute;
+                                width:100%;
+                                height:100%;
+                                top:0;
+                                left:0;
+                                z-index:100;
+                        }
+                        .lesson-image{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include justify-content(center);
+                                position:absolute;
+                                top:0; left:0;
+                                height:100%; width:100%;
+                                padding:90px 20px 20px;
+                                img{
+                                        width:100%;
+                                }
+                        }
+                }
+        }
+        @include phone(){
+                .calendar-header{
+                        display: none;
+                }
+                .calendar-week{
+                        @include flexbox();
+                        @include flex-direction(column);
+                }
+                .lesson{
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include align-items(center);
+                        height:200px;
+                        padding:0;
+                        border-bottom:1px solid $black;
+                        .lesson-image{
+                                @include flexbox();
+                                @include flex-direction(row);
+                                @include justify-content(center);
+                                @include align-items(center);
+                                padding:0 20px;
+                                width:40%;
+                        }
+                        img{
+                                max-height:180px;
+                                width:auto;
+                        }
+                        .lesson-text{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                padding:30px;
+                                date{
+                                        margin-left:20px;
+                                }
+                                h2{
+                                        margin-top:10px;
+                                }
                         }
                 }
         }
 }
-
- // .calendar-week{
-        //         &:nth-child(1){
-        //                 .lesson{
-        //                         &:first-child{
-        //                                 border:$outline solid $black;
-        //                         }
-        //                         &:not(:first-child){
-        //                                 border-top:$outline solid $black;
-        //                                 border-right:$outline solid $black;
-        //                                 border-bottom:$outline solid $black;
-
-        //                         }
-        //                         date{}
-        //                         h2{}
-        //                 }
-        //         }
-        //         &:not(:first-child){
-        //                 .lesson{
-        //                         &:first-child{
-        //                                 border-left:$outline solid $black;
-        //                                 border-bottom:$outline solid $black;
-        //                                 border-right:$outline solid $black;
-        //                         }
-        //                         &:not(:first-child){
-        //                                 border-right:$outline solid $black;
-        //                                 border-bottom:$outline solid $black;
-
-        //                         }
-        //                         date{}
-        //                         h2{}
-        //                 }
-
-        //         }
-                
-        // }

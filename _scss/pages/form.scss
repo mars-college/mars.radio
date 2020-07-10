@@ -1,0 +1,138 @@
+#Form{
+        @include flexbox();
+        @include align-content(center);
+        @include flex-direction(column);
+        width:100%;
+        margin:80px auto;
+        background-color: $white;
+        iframe{
+                margin:0 auto;
+        }
+}
+.group { 
+        @include flexbox();
+        @include flex-direction(row);
+        position: relative; 
+        &.text{
+                padding-top:10px;
+                margin-bottom: 40px; 
+                input{
+                        height: 50px;
+                        max-width:600px;
+                        border-bottom: 1px solid #B1B1B1;
+                        outline: none;
+                        width: 100%;
+                        color:$highlight;
+                        @include tablet{
+                                font-size:32px;
+                        }
+                }
+                label{
+                        position:absolute;
+                }
+        }
+        &.radio{
+                input{
+                        height:18px;
+                        width:18px;
+                        margin-top:-5px;
+                }
+        }
+        &.radio,
+        &.textarea{
+                label{
+                        line-height: 50px;
+                        margin:0 20px 0 5px;
+                }
+                @include flex-direction(column);
+                div{
+                        @include flexbox();
+                        @include flex-direction(row);
+                        @include align-items(center);
+                }
+                textarea{
+                        max-width:600px;
+                        resize:none;
+                        font-size:32px;
+                        padding:20px;
+                        line-height: 46px;
+                        background-color:transparent;
+                        color:#fff;
+                         -webkit-box-shadow: none;
+                            -moz-box-shadow: none;
+                            box-shadow: none;
+                            outline: none;
+                }
+        }
+}
+
+input{
+        display: block;
+        border: none;
+        color: #B1B1B1;
+        background: rgba(0,0,0,0);
+        opacity: 0.8;
+        transition: 0.2s ease;
+        z-index:50;
+        &:focus{
+                outline: none;
+                opacity: 1;
+        } 
+}
+
+
+label {
+        color: #B1B1B1; 
+        font-weight: normal;
+        position: relative;
+        pointer-events: none;
+        opacity: 0.5;
+        transition: 0.2s ease all; 
+        -moz-transition: 0.2s ease all; 
+        -webkit-transition: 0.2s ease all;
+        font-family:sourceSansProLight;
+        font-size:20px;
+        letter-spacing:0.03em;
+        text-transform:uppercase; 
+}
+
+/* active state */
+.text input:focus ~ label, 
+.text input:valid ~ label{
+  top: -10px;
+  font-size: 12px;
+  color: #B1B1B1;
+  opacity: 1;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to    { width:0; background:transparent; }
+}
+
+a.send-btn {
+  float: right;
+  color: #B1B1B1;
+  transition: 0.2s ease;
+}
+
+a.send-btn:hover {
+  color: #FAFAFA;
+  cursor: pointer;
+}

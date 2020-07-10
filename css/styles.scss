@@ -10,10 +10,18 @@
 
 /* Pages */
 html{
-        background-color:$black;
+        background-color:$black; 
+}
+html, body{
+         height:100%; //Set so descendents vertically fill space
+         overflow-y:scroll;
 }
 body > article{
-        margin-top:$headerHeight;
+        padding-top:$headerHeight;
 }
 @import 'pages/splash.scss';
 @import 'pages/syllabus.scss';
+@import 'pages/faq.scss';
+@import 'pages/martians.scss';
+@import 'pages/class.scss';
+@import 'pages/form.scss';
