@@ -61,7 +61,7 @@
         ~~~~~~~~~~~~~~~~~~~~~ */
         .splash_intro{
                 color:$white;
-                @include background-image('/img/texture-crystals.png');
+                @include background-image('/img/texture-crystals.jpg');
                 .video{
                         width:100%;
                         max-width:800px;
