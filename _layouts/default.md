@@ -23,7 +23,7 @@
             <a class="hamburger" href="#">&#9776;</a>
             <nav class="main_nav">
                 <ul>
-                    <li><a href="/martians">Martians</a></li>
+                    <li><a href="/martians">Coaches</a></li>
                     <li><a href="/syllabus">Syllabus</a></li>
                     <li><a href="/faq">FAQ</a></li>
                     <li><a href="/form">Contact</a></li>
