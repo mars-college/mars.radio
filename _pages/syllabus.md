@@ -36,7 +36,7 @@ title: Cyber Arts Camp
                                         <span>Day 2</span>
                                         <!-- <date>06/24</date> -->
                                 </header>
-                                <h2>Sculpture p.1</h2>
+                                <h2>Style</h2>
                         </div>
                 </div>
                 <div class="lesson">
@@ -49,7 +49,7 @@ title: Cyber Arts Camp
                                         <span>Day 3</span>
                                         <!-- <date>06/25</date> -->
                                 </header>
-                                <h2>Sculpture p.2</h2>
+                                <h2>Construct</h2>
                         </div>
                 </div>
                 <div class="lesson">

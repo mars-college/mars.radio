@@ -7,8 +7,28 @@ title: Cyber Arts Camp
         <header>
                 <h1>Intro</h1>
         </header>
+        <ul class="class-ascent_checklist">
+                <li>
+                        Clean workspace (approx 4'x2')
+                </li>
+        </ul>
+        <ul class="class-links">
+                <li><a href="https://www.jenstark.com/">Jen Stark</a></li>
+                <li><a href="">Bruce Gray</a></li>
+        </ul>
 
-        
+        <ul class="missions">
+                <li>    Describe your home planet
+                        Write it down
+                </li>
+                <li>
+                        Finish cuttint out all the triangles. You should have 40 total
+                </li>
+        </ul>
+
+        https://olafureliasson.net
+        http://yangminha.com/?ckattempt=1
+
         Thank you for joining us and helping on our mission to colonize and bring art to Mars. This will be a two week program where we will teach you everything you need to build your very own solar powered programmed light sculpture!
         
         Welcome Martians!
