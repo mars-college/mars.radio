@@ -4,7 +4,6 @@ title: Cyber Arts Camp
 ---
 
 <article id="Martians">
-        <h1>Meet Your Coaches</h1>
         <ul>
                 <li>
                         <img src="/img/coach-ji.jpg">
