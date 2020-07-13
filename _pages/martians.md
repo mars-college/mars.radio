@@ -17,7 +17,7 @@ title: Cyber Arts Camp
                         <img src="/img/coach-alice.jpg">
                         <div class="text">
                                 <h2>Alice</h2>
-                                <span>planet ?</span>
+                                <span>planet europe</span>
                                 <p>Our electronics sage has lead our team to build, fix, and repurpose hardware to build incredible tools. From solar-powered gadgets to kinetic toys give her a soldering iron and you'll be amazed at what she creates.</p>
                         </div>
                 </li>
@@ -26,7 +26,7 @@ title: Cyber Arts Camp
                         <div class="text">
                                 <h2>Kir</h2>
                                 <span>planet dikhroos</span>
-                                <p>Hailing from the land of dichroic projections, Kirby's here to bring the rainbows to Mars. Geometry, Symmetry, and artistic creation, Bob Rossian she'll bring the sparkle to your terra-forms.</p>
+                                <p>Hailing from the land of dichroic projections, Kir here to bring the rainbows to Mars. Geometry, Symmetry, and Artistry, with a Bob Rossian flair she'll bring the sparkle to your terra-forms.</p>
                         </div>
                 </li>
                 <li>
