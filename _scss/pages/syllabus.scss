@@ -53,7 +53,7 @@ $outlineinverse:-5px;
                         header{
                                 @include flexbox();
                                 @include flex-direction(row);
-                                @include justify-content(space-between);
+                                @include justify-content(center);
                                 white-space: nowrap;
                                 span,
                                 date{

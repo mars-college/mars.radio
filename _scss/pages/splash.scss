@@ -196,15 +196,22 @@
                 @include background-image("/img/texture-neon.jpg");
                 min-height:70vh;
                 h2 { 
-                        font-size:150px;
                         letter-spacing: 0.03em;
                         text-align: justify;
-                        line-height:200px;
-                        text-shadow: 4px 4px $pink;
+                        @include tablet{
+                                font-size:150px;
+                                line-height:200px;
+                                text-shadow: 4px 4px $pink;
+                        }
+                        @include phone{
+                                text-shadow: 2px 2px $pink;
+                        }
                 }
                 p{
                         @include p-large();
-                        padding-left:200px;
+                        @include tablet{
+                                 padding-left:200px;
+                        }
                 }
                 .splash_becomeamartian_btn{
                         @include tablet{

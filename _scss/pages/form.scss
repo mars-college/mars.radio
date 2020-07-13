@@ -3,7 +3,6 @@
         @include align-content(center);
         @include flex-direction(column);
         width:100%;
-        margin:80px auto;
         background-color: $white;
         iframe{
                 margin:0 auto;

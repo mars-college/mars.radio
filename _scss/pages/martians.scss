@@ -2,7 +2,6 @@
         @include flexbox();
         @include flex-direction(column);
         @include background-image('/img/texture-stars.jpg');
-        padding:8% 0.5%;
         h1{
                 @include data-header;
         }
@@ -40,6 +39,7 @@
                 }
         }
         @include tablet{
+                padding:8% 0.5%;
                 li{
                        
                         width:33.33%;
@@ -47,6 +47,7 @@
                 
         }
         @include phone{
+                padding:8% 10px;
                 li{
                         // @include flexbox();
                         // @include flex-direction(row);
