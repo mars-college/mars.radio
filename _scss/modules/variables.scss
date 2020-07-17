@@ -10,6 +10,15 @@ $headerHeight:60px;
                 -o-background-size: cover;
                 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/post_bg.jpg',    sizingMethod='scale')";
 }
+
+@mixin page_padding(){
+        @include tablet{
+                padding:8% 0.5%;
+        }
+        @include phone{
+                padding:8% 10px;
+        }
+}
 // C O L O R S //
 $black: #000;
 $white: #fff;

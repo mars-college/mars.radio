@@ -14,7 +14,7 @@ title: Cyber Arts Camp
         </div>
         <section class="calendar">
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/01"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-intro.png">
                         </div>
@@ -27,7 +27,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/02"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-dometemplate.png">
                         </div>
