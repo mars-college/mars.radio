@@ -4,7 +4,9 @@
 
     ```
     brew install rbenv
-    rbenv init
+    echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+    source ~/.bash_profile
+    eval "$(rbenv init -)"
     curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
     rbenv install 2.7.1
     rbenv global 2.7.1
