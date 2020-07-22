@@ -61,7 +61,7 @@ title: Cyber Arts Camp
         <section class="splash_becomeamartian">
                 <h2><span>Ready to</span><br/><span>become a</span><br/><span>Martian?</span></h2>
                 <p>Interested in our upcoming light sculpture course ? Mars Radio is currently looking for new students across the galaxy to join the Martians. Sign up here to stay updated on course start date & registration.</p>
-                <a class="splash_becomeamartian_btn btn btn-large btn-black" href="/form.html">Contact Us</a>
+                <a class="splash_becomeamartian_btn btn btn-large btn-black" href="/form">Contact Us</a>
         </section>
         <section class="splash_about">
                 <h2>We're the Martians</h2>
