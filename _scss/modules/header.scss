@@ -23,6 +23,8 @@
                         transition:all 0.5s ease;
                         color:$white;
                         font-family:data;
+                        font-size:inherit;
+                        line-height: inherit;
                 }
                 &:hover{
                         a{
