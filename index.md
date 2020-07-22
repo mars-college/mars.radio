@@ -8,7 +8,7 @@ title: Cyber Arts Camp
                 <h1><span>Learn cutting edge technology and sustainability through art.</span></h1>
                 <p><span>The Martians have landed. We're setting up a civilization based on sustainability, technology, and art. We need YOUR help designing solar-powered light structures to use on our Martian planet. Are you ready to join us on this intergalactic mission?</span></p>
                 <div class="video">
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/eOLrpjdLOJc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DJ8ixhwwvYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
         </section>
         <section class="splash_lessons">
