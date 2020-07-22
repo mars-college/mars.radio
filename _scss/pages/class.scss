@@ -19,15 +19,19 @@
                 width:100%;
         }
         li{
-        font-size:20px;
-        line-height: 32px;
-        max-width:900px;
-        hyphens:none;
-        @include phone{
-                font-size:16px;
-                line-height: 30px;
+                font-size:20px;
+                line-height: 32px;
+                max-width:900px;
+                hyphens:none;
+                @include phone{
+                        font-size:16px;
+                        line-height: 30px;
+                }
+
         }
-}
+        p,li{
+                margin-bottom:10px;
+        }
         .class-ascent_checklist,
         .class-links,
         .class-mission,
