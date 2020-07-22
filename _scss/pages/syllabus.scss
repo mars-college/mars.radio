@@ -33,7 +33,7 @@ $outlineinverse:-5px;
                         @include flexbox();
                         @include flex-direction(row);
                         @include flex-wrap(wrap);
-                        height:calc(100% - 40px); // subtract calendar header height
+                        height:100%;
                 }
                 .calendar-header{
                         height:40px;

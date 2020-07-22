@@ -5,13 +5,13 @@ title: Cyber Arts Camp
 
 <!-- week 1 -->
 <article id="Syllabus">
-        <div class="calendar-header">
+        <!-- <div class="calendar-header">
                 <span>M</span>
                 <span>T</span>
                 <span>W</span>
                 <span>Th</span>
                 <span>F</span>
-        </div>
+        </div> -->
         <section class="calendar">
                 <div class="lesson">
                         <a class="lesson-class_link" href="/classes/01"></a>
