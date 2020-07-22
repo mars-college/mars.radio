@@ -32,7 +32,7 @@ title: Cyber Arts Camp
                 <li>
                         <img src="/img/coach-cos.jpg">
                         <div class="text">
-                                <h2>Anna</h2>
+                                <h2>Cos</h2>
                                 <span>planet disco</span>
                                 <p>Her planet is made out of mirrors allowing her to see into many dimensions. She brings this skill into her architecture creating spaces that are literally out of this world.</p>
                         </div>

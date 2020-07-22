@@ -34,10 +34,22 @@ h4{}
         font-size:12px;
 }
 @mixin p-large{
-        font-size:28px;
-        line-height: 40px;
-        letter-spacing: .03em;
         margin-bottom:20px;
+        @include tablet{
+                letter-spacing: .03em;
+                font-size:28px;
+                line-height: 40px;
+        }
+        @include phone{
+                font-size:18px;
+                line-height: 30px;
+        }
+}
+@mixin p-reg{
+        font-size:20px;
+        line-height: 32px;
+        max-width:900px;
+        hyphens:none;
         @include phone{
                 font-size:16px;
                 line-height: 30px;
@@ -60,7 +72,7 @@ h3{
         font-size:20px;
         margin-bottom:10px;
 }
-p{
+a, p, span,li{
         font-size:20px;
         line-height: 32px;
         max-width:900px;
@@ -69,6 +81,12 @@ p{
                 font-size:16px;
                 line-height: 30px;
         }
+}
+p, li{
+        margin-bottom:10px;
+}
+a:hover{
+        color:$highlight;
 }
 
 .btn{

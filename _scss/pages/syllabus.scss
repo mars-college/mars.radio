@@ -18,6 +18,14 @@ $outlineinverse:-5px;
                         cursor:pointer;
                 }
                 color:$black;
+                .lesson-class_link{
+                        position:absolute;
+                        width:100%;
+                        height:100%;
+                        top:0;
+                        left:0;
+                        z-index:100;
+                }
         }
         
         @include tablet(){
@@ -65,14 +73,6 @@ $outlineinverse:-5px;
                         h2{
                                 text-align:center;
                                 margin:10px 0;
-                        }
-                        .lesson-class_link{
-                                position:absolute;
-                                width:100%;
-                                height:100%;
-                                top:0;
-                                left:0;
-                                z-index:100;
                         }
                         .lesson-image{
                                 @include flexbox();

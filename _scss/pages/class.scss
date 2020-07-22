@@ -1,3 +1,61 @@
 #Class{
-        @include page_padding();
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        padding-bottom:100px;
+        >header{
+                width:100%;
+                h1{
+                        background-color:yellow;
+                        letter-spacing: .1em;
+                        text-transform: uppercase;
+                        @include text_element_padding();
+                        text-align: center;
+                }
+        }
+        .video{
+                max-width: 1200px;
+                margin:0 auto 40px;
+                width:100%;
+        }
+        .class-ascent_checklist,
+        .class-links,
+        .class-mission,
+        .class-transmission{
+                width:100%;
+                max-width:1000px;
+                padding:0 20px;
+                @include tablet{
+                        margin-bottom:40px;
+                }
+                @include phone{
+                        margin-bottom:20px;
+                }
+                p{
+                        margin-bottom:10px;
+                }
+        }
+        .class-transmission{
+                p,a{
+                        @include p-large();
+                }
+        }
+        ul{
+                margin-bottom:20px;
+                li p{
+                        display:inline;
+                }
+                li::before{
+                        content: attr(data-icon);
+                        font-size:22px;
+                        padding-right:10px;
+                }
+        }
+        a{
+                color:$highlight;
+                transition:0.5s ease;
+                &:hover{
+                        background-color:yellow;
+                }
+        }
 }

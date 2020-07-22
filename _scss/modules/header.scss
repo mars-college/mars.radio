@@ -43,6 +43,10 @@
                         color:$white;
                         transition:all 0.5s ease;
                         letter-spacing: 0.02em;
+                        &:hover{
+                                color:$highlight;
+                                background-color:yellow;
+                        }
                         &.active{
                                 color:$highlight;
                         }
@@ -69,7 +73,6 @@
                                 @include flexbox();
                                 @include align-items(center);
                                 height:100%;
-                                padding-right:20px;
                         }
                 }
                 a{
@@ -77,6 +80,17 @@
                         @include flexbox();
                         @include align-items(center);
                         height: 100%;
+                        &:not(:first-child),
+                        &:not(:last-child){
+                                padding:0 10px;
+                        }
+                        &:first-child{
+                                padding-left:20px;
+                        }
+                        &:last-child{
+                                padding-right:20px;
+                        }
+                        padding:0 20px;
                         &:hover{
                                 color:$highlight;
                         }
