@@ -13,9 +13,11 @@ $outlineinverse:-5px;
         }
         .lesson{
                 transition: all 0.5s ease;
+                position:relative; // needed to absolutely position full frame link
                 &:hover{
-                        //background-color:$quartz;
+                        background-color:yellow;
                         cursor:pointer;
+                        color:$highlight;
                 }
                 color:$black;
                 .lesson-class_link{
@@ -52,7 +54,6 @@ $outlineinverse:-5px;
                         @include flex-direction(column);
                         @include flex-basis(20%);
                         width:20%;
-                        position:relative; // needed to absolutely position full frame link
                         height:400px;
                         padding:2%;
                         border-left:2px solid $black;
