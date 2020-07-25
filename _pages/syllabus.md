@@ -53,7 +53,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/04"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-electronics.png">
                         </div>
