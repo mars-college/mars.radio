@@ -40,7 +40,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/03"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-dome.png">
                         </div>
