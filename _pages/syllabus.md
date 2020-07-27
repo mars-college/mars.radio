@@ -66,7 +66,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/05"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-arduino.png">
                         </div>
@@ -79,7 +79,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/06"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-arduino2.png">
                         </div>
@@ -92,7 +92,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/07"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-led.png">
                         </div>
@@ -105,7 +105,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/08"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-solderingiron.png">
                         </div>
@@ -118,7 +118,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/09"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-studioday.png">
                         </div>
@@ -131,7 +131,7 @@ title: Cyber Arts Camp
                         </div>
                 </div>
                 <div class="lesson">
-                        <!-- <a class="lesson-class_link" href="/class.html"></a> -->
+                        <a class="lesson-class_link" href="/classes/10"></a>
                         <div class="lesson-image">
                                 <img src="/img/syllabus-icon-demo.png">
                         </div>

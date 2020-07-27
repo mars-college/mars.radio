@@ -45,15 +45,12 @@
                         color:$white;
                         transition:all 0.5s ease;
                         letter-spacing: 0.02em;
-                        &:hover{
+                        &:hover,
+                        &.active{
                                 color:$highlight;
                                 background-color:yellow;
                         }
-                        &.active{
-                                color:$highlight;
-                        }
                 }
-               
         }
         .hamburger{
                 display: none;
@@ -81,7 +78,13 @@
                         height:100%;
                         @include flexbox();
                         @include align-items(center);
-                        height: 100%;
+                        padding:0 20px;
+                        border-right:2px solid transparent;
+                        border-left:2px solid transparent;
+                        &.active{
+                                border-right:2px solid $black;
+                                border-left:2px solid $black;
+                        }
                         &:not(:first-child),
                         &:not(:last-child){
                                 padding:0 10px;
@@ -92,7 +95,6 @@
                         &:last-child{
                                 padding-right:20px;
                         }
-                        padding:0 20px;
                         &:hover{
                                 color:$highlight;
                         }
@@ -112,7 +114,7 @@
                                 color:$highlight;
                         }
                         &.active{
-                                color:$quartz;
+                                color:$highlight;
                         }
                 }
                 h1{

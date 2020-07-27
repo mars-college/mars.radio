@@ -39,11 +39,16 @@ jQuery(document).ready(function( $ ) {
         // Add active class to nav
         // http://www.sweet-web-design.com/wordpress/how-to-add-active-navigation-class-based-on-url-to-menu-item/2401/
         jQuery(function($) {
-         var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
-         $('ul a').each(function() {
-          if (this.href === path) {
-           $(this).addClass('active');
-          }
-         });
+                var path = window.location.href.slice(0,-1); // because the 'href' property of the DOM element is the absolute path
+                var pathArray = window.location.href.split('/');
+                var pathLocation = pathArray[3];
+                $('.main_nav ul a').each(function() {
+                        var navPathArray = this.href.split('/');
+                        var navPathLocation = navPathArray[3];
+                        
+                        if (this.href === path || navPathLocation === 'syllabus' && pathLocation === 'classes') {
+                                $(this).addClass('active');
+                        }
+                });
         });
 });
