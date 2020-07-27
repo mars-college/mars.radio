@@ -2,15 +2,19 @@
         @include flexbox();
         @include flex-direction(column);
         @include align-items(center);
-        padding-bottom:100px;
+        padding-bottom:600px;
         >header{
                 width:100%;
+                @include tablet{
+                        margin-bottom:40px;
+                }
                 h1{
                         background-color:yellow;
                         letter-spacing: .1em;
                         text-transform: uppercase;
                         @include text_element_padding();
                         text-align: center;
+                        margin-bottom:0; //default reset
                 }
         }
         .video{
@@ -37,22 +41,32 @@
         .class-mission,
         .class-transmission{
                 width:100%;
-                max-width:1000px;
-                padding:0 20px;
+                @include big-desktop{
+                        max-width:1200px !important;
+                }
                 @include tablet{
                         margin-bottom:40px;
+                        padding:0 100px;
+                        max-width:960px;
                 }
                 @include phone{
                         margin-bottom:20px;
+                        padding:0 40px;
+                }
+                h2{
+                        text-transform: uppercase;
+                        font-size:16px;
+                        border-bottom: 1px solid $black;
+                        letter-spacing: 0.02em;
                 }
                 p{
                         margin-bottom:10px;
                 }
         }
-        .class-transmission{
-                p,a,li{
-                        @include p-large();
-                }
+        .class-mission{
+               li{
+                        margin-bottom:20px;
+               }
         }
         ul{
                 margin-bottom:20px;
@@ -71,5 +85,8 @@
                 &:hover{
                         background-color:yellow;
                 }
+        }
+        h2{
+                margin-bottom:20px;
         }
 }
