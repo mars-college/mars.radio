@@ -35,7 +35,8 @@
         </header>
 		{{content}}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="/js/jquery.fitvids.js"></script>
-        <script src="/js/scripts.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+                <script src="/js/jquery.fitvids.js"></script>
+                <script src="/js/scripts.js"></script>
 	</body>
 </html>

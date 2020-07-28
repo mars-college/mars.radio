@@ -1,0 +1,18 @@
+#Four_Zero_Four{
+        .four_zero_four-text{
+                position:absolute;
+                top:0;
+                width:100vw;
+                height:100vh;
+
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(center);
+                @include align-items(center);
+                h1,p{
+                        color:$highlight;
+                        background-color: yellow;
+                        margin-bottom:20px;
+                }
+        }
+}
