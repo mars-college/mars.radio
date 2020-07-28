@@ -8,11 +8,18 @@ var speed = [];
 function loadFaces() {
     for(var i=0; i<20; i++){
         faces[i] = loadImage("/img/aliens/alien-"+i+".gif");
+
+        // this is much smaller filesize but does not support alpha channel :( 
+        /*
+        faces[i] = createVideo("/img/aliens_mp4/alien-"+i+".mp4");
+        faces[i].loop();
+        faces[i].volume(0);
+        */        
     }
 }
 
 function preload(){
-        //loadFaces();
+        // loadFaces();
 }
 function setup() {
 
