@@ -4,19 +4,19 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172226953-1"></script>
         <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'UA-172226953-1');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-172226953-1');
         </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 		<title>{{page.title}}</title>
 		<link rel="stylesheet" type="text/css" href="/css/styles.css">
 		<link rel="icon" href="/favicon.png">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <!-- <script src="/js/jquery.fitvids.js"></script> -->
-		<!-- <script src="/js/scripts.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+		<script src="/js/scripts.js"></script>
 	</head>
 	<body>
         <header class="main_header">
@@ -34,9 +34,5 @@
             </h1>
         </header>
 		{{content}}
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
-                <script src="/js/jquery.fitvids.js"></script>
-                <script src="/js/scripts.js"></script>
 	</body>
 </html>
