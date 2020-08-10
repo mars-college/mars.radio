@@ -1,4 +1,19 @@
 #Class{
+        @mixin fullWidth(){
+                width:100%;
+                h2{
+                        @include big-desktop{
+                                max-width:1200px !important;
+                        }
+                        @include tablet{
+                                margin:0 100px 40px;
+                                max-width:960px;
+                        }
+                        @include phone{
+                                margin:0 40px 20px;
+                        }
+                }
+        }
         @include flexbox();
         @include flex-direction(column);
         @include align-items(center);
@@ -13,6 +28,21 @@
                         @include text_element_padding();
                         text-align: center;
                         margin-bottom:0; //default reset
+                }
+        }
+        h2{
+                width:100%;
+                text-transform: uppercase;
+                font-size:16px;
+                border-bottom: 1px dotted $black;
+                letter-spacing: 0.02em;
+                margin-bottom:20px;
+                @include phone{
+                        font-size:14px;
+                        line-height: 30px;
+                }
+                @include big-desktop{
+                        font-size:18px;
                 }
         }
         .video{
@@ -37,7 +67,8 @@
         .class-ascent_checklist,
         .class-links,
         .class-mission,
-        .class-transmission{
+        .class-transmission,
+        .class-tips{
                 width:100%;
                 @include big-desktop{
                         max-width:1200px !important;
@@ -51,23 +82,112 @@
                         margin-bottom:20px;
                         padding:0 40px;
                 }
-                h2{
-                        text-transform: uppercase;
-                        font-size:16px;
-                        border-bottom: 1px dotted $black;
-                        letter-spacing: 0.02em;
-                        margin-bottom:20px;
-                        @include phone{
-                                font-size:14px;
-                                line-height: 30px;
-                        }
+        }
+        .class-keywords{
+                position:relative;
+                @include fullWidth();
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(space-evenly);
+                .card{
+                        width:100%;
+                        height: 400px;
+                        transition: transform 1s;
+                        transform-style: preserve-3d;
+                        cursor: pointer;
+                        position: relative;
                         @include big-desktop{
-                                font-size:18px;
+                                height:500px;
+                                width: 50%;
                         }
-                }
-                p{
-                        margin-bottom:10px;
-                }
+                        &:hover{
+                                -webkit-transform: rotateX(20deg);
+                                transform: rotateX(20deg);
+                                box-shadow: 20px 0px 20px rgba(50,50,50,.2);
+                                h2{
+                                        opacity:1;
+                                }
+                        }
+                        &.is-flipped{
+                                transform: rotateX(180deg);
+                                &:hover{
+                                        // transform: rotateX(160deg);
+                                        // -webkit-transform: rotateX(160deg);
+                                        // box-shadow: 20px 0px 20px rgba(255,255,255,.2);
+                                }
+                                h2{
+                                        opacity:0;
+                                }
+                                .card-front{
+                                        opacity:0;
+                                }
+                        }
+                        h2{
+                                position:absolute;
+                                transition:all 0.5s ease;
+                                color:black;
+                                border-bottom:none;
+                                font-size:50px;
+                                opacity:0;
+                                transition: all 0.5s ease;
+                                z-index: 1000;
+                                line-height: 60px;
+                        }
+                        .card-front,
+                        .card-back{
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                line-height: 260px;
+                                text-align: center;
+                                font-weight: bold;
+                                font-size: 40px;
+                                -webkit-backface-visibility: hidden;
+                                backface-visibility: hidden;
+                                @include flexbox();
+                                @include align-items(center);
+                                transition:all 0.5s ease;
+                        }
+                        .card-front{
+                                background-color:ivory;
+                                .image-container{
+                                        position:relative;
+                                        overflow:hidden;
+                                        width:100%;
+                                        height:100%;
+                                        img{
+                                                object-fit: cover;
+                                                position: absolute;
+                                                left: 50%;
+                                                top: 50%;
+                                                transform: translate(-50%, -50%);
+                                                height: 100%;
+                                                width: 100%;
+                                        }
+                                }
+
+                        }
+                        .card-back {
+                                background: $white;
+                                transform: rotateY(180deg);
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include justify-content(center);
+                                padding:10px 50px;
+                                -webkit-transform: rotateX(180deg);
+                                transform: rotateX(180deg);
+                                p{
+                                        font-family: sourceSansProLight;
+                                        font-size:26px;
+                                        line-height: 40px;
+                                }
+                                .strong{
+                                        font-size:120%;
+                                        margin-right:3px;
+                                }
+                        }
+               }
         }
         .class-mission{
                li{

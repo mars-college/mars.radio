@@ -115,6 +115,7 @@ $outlineinverse:-5px;
                         img{
                                 max-height:180px;
                                 width:auto;
+                                max-width:100%;
                         }
                         .lesson-text{
                                 @include flexbox();

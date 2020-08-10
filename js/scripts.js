@@ -22,7 +22,18 @@ jQuery(document).ready(function( $ ) {
                 }
         });
 
-        
+        // var card = document.querySelector('.card');
+        //         card.addEventListener( 'click', function() {
+        //         card.classList.toggle('is-flipped');
+        // });
+        $('.card').on('click', function(){
+                if( $(this).hasClass('is-flipped')){
+                        $(this).toggleClass('is-flipped');
+                } else{
+                        $('.card').removeClass('is-flipped');
+                        $(this).toggleClass('is-flipped');
+                }
+        });
 
         // HHHHHH-AAAAAAA-MMMMMMMM-BURGERia
         $('.hamburger').click(function(e) {
