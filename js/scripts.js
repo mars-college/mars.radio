@@ -47,6 +47,7 @@ jQuery(document).ready(function( $ ) {
                 $("body").toggleClass("menu-active");
         });
 
+
         // Add active class to nav
         // http://www.sweet-web-design.com/wordpress/how-to-add-active-navigation-class-based-on-url-to-menu-item/2401/
         jQuery(function($) {
@@ -63,4 +64,20 @@ jQuery(document).ready(function( $ ) {
                         }
                 });
         });
+        $('.nav-tab').on('click', function(){
+                $('.nav-tab').removeClass('active');
+                $(this).addClass('active');
+        });
 });
+        function openReviewTab(reviewItem){
+                var i;
+                var x = document.getElementsByClassName("tab-content");
+                console.log(x.length);
+                for(i = 0; i < x.length; i++){
+                        x[i].style.display = "none";
+                        console.log(x[i]);
+                        //x[i].classList.remove('active');
+                }
+                document.getElementById(reviewItem).style.display = "block";
+                //document.getElementById(reviewItem).classList.add('active');
+        }
