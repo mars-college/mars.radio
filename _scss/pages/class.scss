@@ -9,27 +9,28 @@
                 font-size:16px;
                 letter-spacing: 0.02em; 
                 &::before{
-                        padding-right:0px;
+                        padding-right:0px !important;
                 }
                 &:not(:last-child){
                         margin-right:10px;
                 }
                 button{
                         width:100%;
-                        border-bottom: 1px dotted $black;
+                        border: 1px solid rgba(0,0,0,0.5);
+                        color:rgba(0,0,0,0.5);
                         line-height: inherit;
                         font-family:inherit;
                         font-size:inherit;
                         &:hover{
                                 cursor:pointer;
                                 color:$highlight;
-                                border-bottom: 1px dotted $highlight;
+                                border: 1px solid $highlight;
                         }
                         &:active,
                         &:focus,
                         &.active{
                                 color:$highlight;
-                                border-bottom: 1px dotted $highlight;
+                                border: 1px solid $highlight;
                                 background-color:yellow;
                         }
                         text-align:left;
@@ -56,10 +57,16 @@
          div[class^="tab-content-item-"] {
                 @include flexbox();
                 @include justify-content(center);
+                @include align-items(flex-start);
          }
         .tab-content-item-image{
                 width:35%;
                 float:left;
+                img{
+                        width:100%;
+                        height:auto;
+                        max-height: 600px;
+                }
         }
         .tab-content-item-code{
                 width:65%;
@@ -70,7 +77,6 @@
         @include flexbox();
         @include flex-direction(column);
         @include align-items(center);
-        padding-bottom:300px;
         >header{
                 width:100%;
                 position:fixed;
@@ -130,6 +136,9 @@
                         @include text_element_padding();
                         text-align: center;
                         margin-bottom:0; //default reset
+                        @include phone{
+                                font-size:24px;
+                        }
                 }
         }
         section{
@@ -142,15 +151,20 @@
                 }
                 header{
                         width:100%;
+                        @include flexbox();
+                        @include align-items(center);
+                        @include flex-direction(column);
                         @include big-desktop{
-                                max-width:1200px !important;
+                                max-width:1000px !important;
                         }
                         @include tablet{
-                                margin:0 100px;
-                                max-width:960px;
+                                //padding:0 100px;
+                                max-width:760px;
                         }
                         @include phone{
-                                margin:0 40px;
+                                h2{
+                                        padding:0 40px;
+                                }
                         }
                 }
                 @include tablet{
@@ -211,7 +225,7 @@
                 }
         }
         p,li{
-                margin-bottom:10px;
+                margin-bottom:20px;
         }
         .image-container{
                 position:relative;
@@ -222,16 +236,18 @@
         .class-mission,
         .class-transmission,
         .class-tips{
-                ul{
+                ul, 
+                > p{
+                        width:100%;
                         @include big-desktop{
                                 max-width:1200px !important;
                         }
                         @include tablet{
-                                margin:0 100px;
+                                padding:0 100px;
                                 max-width:960px;
                         }
                         @include phone{
-                                margin:0 40px;
+                                padding:0 40px;
                         }   
                 }  
         }
@@ -242,15 +258,19 @@
                 @include flex-wrap(wrap);
                 @include justify-content(space-evenly);
                 .card{
-                        width:100%;
-                        height: 400px;
+                        width:50%;
+                        height: 500px;
                         transition: transform 1s;
                         transform-style: preserve-3d;
                         cursor: pointer;
                         position: relative;
+                        @include phone{
+                                width:100%;
+                                height:300px;
+                        }
                         @include big-desktop{
                                 height:500px;
-                                width: 50%;
+                                width: 33.33%;
                         }
                         &:hover{
                                 -webkit-transform: scale(1.05);
@@ -276,16 +296,21 @@
                         h3{
                                 position:absolute;
                                 transition:all 0.5s ease;
-                                color:black;
+                                color:$highlight;
                                 border-bottom:none;
                                 font-size:50px;
-                                width:100%;
                                 text-transform: uppercase;
                                 letter-spacing: 0.02em;
                                 opacity:0;
                                 transition: all 0.5s ease;
                                 z-index: 1000;
                                 line-height: 60px;
+                                padding:20px 40px;
+                                background-color:rgba(255,255,0,.9);
+                                @include phone{
+                                        font-size:24px;
+                                        opacity:1;
+                                }
                         }
                         .card-front,
                         .card-back{
@@ -300,6 +325,7 @@
                                 backface-visibility: hidden;
                                 @include flexbox();
                                 @include align-items(center);
+                                @include justify-content(center);
                                 transition:all 0.5s ease;
                         }
                         .card-front{
@@ -333,6 +359,10 @@
                                         font-family: sourceSansProLight;
                                         font-size:26px;
                                         line-height: 40px;
+                                        @include phone{
+                                                font-size:16px;
+                                                line-height:30px;
+                                        }
                                 }
                         }
                }

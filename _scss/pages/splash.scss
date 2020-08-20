@@ -60,8 +60,9 @@
         /\/\/\/\/\/\/\/\/\/\/\
         ~~~~~~~~~~~~~~~~~~~~~ */
         .splash_intro{
+                background-color:$black;
                 color:$white;
-                @include background-image('/img/texture-crystals.jpg');
+                @include background-image('/img/textures/crystals.jpg');
                 .video{
                         width:100%;
                         max-width:800px;
@@ -92,7 +93,7 @@
                 }
         }
         .splash_lessons{
-                @include background-image("/img/texture-aluminum-foil.jpg");
+                @include background-image("/img/textures/aluminum-foil.jpg");
                 h2{
                         color:$white;
                         text-shadow:7px 7px $black;
@@ -193,7 +194,7 @@
         }
        
         .splash_becomeamartian{
-                @include background-image("/img/texture-neon.jpg");
+                @include background-image("/img/textures/neon.jpg");
                 min-height:70vh;
                 h2 { 
                         letter-spacing: 0.03em;
@@ -221,7 +222,7 @@
                 }
         }
         .splash_about{
-                @include background-image("/img/texture-mars.jpg");
+                @include background-image("/img/textures/mars.jpg");
                 h2{
                 }
                 p{

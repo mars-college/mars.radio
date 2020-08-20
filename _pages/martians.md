@@ -6,7 +6,7 @@ title: Cyber Arts Camp
 <article id="Martians">
         <ul>
                 <li>
-                        <img src="/img/coach-ji.jpg">
+                        <img src="/img/coaches/ji.jpg">
                         <div class="text">
                                 <h2>Ji</h2>
                                 <span>earth</span>
@@ -14,7 +14,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-alice.jpg">
+                        <img src="/img/coaches/alice.jpg">
                         <div class="text">
                                 <h2>Alice</h2>
                                 <span>planet europe</span>
@@ -22,7 +22,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-kir.jpg">
+                        <img src="/img/coaches/kir.jpg">
                         <div class="text">
                                 <h2>Kir</h2>
                                 <span>planet dikhroos</span>
@@ -30,7 +30,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-cos.jpg">
+                        <img src="/img/coaches/cos.jpg">
                         <div class="text">
                                 <h2>Cos</h2>
                                 <span>planet disco</span>
@@ -38,7 +38,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-disco_cat.jpg">
+                        <img src="/img/coaches/disco_cat.jpg">
                         <div class="text">
                                 <h2>Disco Cat</h2>
                                 <span>planet disco</span>
@@ -46,7 +46,7 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coach-gene.jpg">
+                        <img src="/img/coaches/gene.jpg">
                         <div class="text">
                                 <h2>Gene</h2>
                                 <span>planet fractopia</span>

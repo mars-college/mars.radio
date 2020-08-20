@@ -1,12 +1,12 @@
 title: Mars Radio
 markdown: kramdown
-email: gene@genekogan.com
+email: info@mars.radio
 description: >- 
   Mars Radio is an educational initiative and community focused on 
   cultivating a low-cost, high-tech lifestyle.
 baseurl: "" 
 url: "mars.radio"
-twitter_username: genekogan
+twitter_username: MarsRadioGroup
 github_username:  brahman-ai
 
 collections:
