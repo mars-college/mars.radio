@@ -27,6 +27,15 @@ sass:
 plugins:
   - jekyll-feed
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "classes"
+    values:
+      layout: "class"
+
+
   
 # Exclude from processing.
 # The following items will not be processed, by default.
