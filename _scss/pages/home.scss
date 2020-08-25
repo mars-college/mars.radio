@@ -1,0 +1,187 @@
+#Home{
+        @include flexbox();
+        @include flex-direction(column);
+        overflow-x:hidden;
+        section{
+                width:100%;
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+                @include phone{
+                        padding-top:40px;
+                }
+                @include tablet{
+                        padding:40px 0;
+                }
+                @include desktop{
+                        padding:80px 40px;
+                }
+        }
+        p{
+                width: 100%;
+                margin-bottom:15px;
+                @include phone{
+                        padding:0 30px;
+                }
+        }
+        h1{
+                padding:0 30px;
+                text-align: center;
+                margin-top:20px;
+        }
+        h2{
+                text-align: center;
+                text-transform: uppercase;
+                @include phone{
+                        margin:35px 0 15px;
+                        padding:0 30px;
+                }
+                @include tablet{
+                        margin-bottom:40px;
+                }
+        }
+        ul{
+                @include flexbox();
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+                li{
+                        img{
+                                max-width:100%;
+                                height:auto;
+                        }
+                        @include tablet{
+                                width:33.33%;
+                                text-align:center;
+                                padding:20px 30px;
+                        }
+                        @include phone{
+                                width:100%;
+                                padding:10px 30px;
+                        }
+                }
+        }
+        .home-banner{
+                background-image:url('/img/banner.jpg');
+                background-size: cover;
+                @include justify-content(center);
+
+                @include phone{
+                        height:400px;
+                        h2{
+                                strong{
+                                        font-size:40px;
+                                        line-height:60px;
+                                }
+                        }
+                        span{
+                                line-height: 50px;
+                        }
+                }
+                @include tablet{
+                        height: 700px;
+                        h2 strong{
+                                font-family:data;
+                                font-size:80px;
+                                line-height: 100px;
+                        }
+                        span{
+                                line-height: 100px;
+                        }
+                }
+        }
+        .video{
+                width:100%;
+                max-width:800px;
+                margin-top:25px;
+                @include tablet{
+                        max-width: 1000px;
+                        margin-bottom:60px;
+                }
+        }
+        .home-learn{
+                img{
+                        max-width:175px;
+                }
+                @include phone{
+                        li{
+                                @include flexbox();
+                                @include align-items(center);
+                                padding:10px 15px;
+                        }
+                        p{
+                                padding:0 0 0 15px;
+                        }
+                        img{
+                                max-height: 200px;
+                                width:auto;
+                                max-width:100px;
+                        }
+                }
+        }
+        .home-what_you_get{
+                li{
+                        padding-left:0;
+                        padding-right:0;
+                }
+                @include tablet{
+                        @include flex-direction(column);
+                        li{
+                                width:100%;
+                                text-align:left;
+                                padding-bottom:10px;
+                                padding-top:10px;
+                        }
+                }
+        }
+        .home-coaches{
+                @include flexbox();
+                @include flex-wrap(nowrap);
+                width: 100%;
+                margin-top:15px;
+                @include phone{
+                        @include flex-wrap(wrap);
+                        li{
+                                width:33.33%;
+                                padding:0 2px;
+                        }
+                }
+                li{
+                        position:relative;
+                        @include tablet{
+                                padding:0 20px;
+                                width:16%;
+                        }
+                }
+                img{
+                        object-fit:cover;
+                        width:100%;
+                        height:auto;
+                        border-radius:50%;
+                }
+        }
+        ul.home-just_do_it{
+                @include flex-direction(column);
+                padding:0;
+                p{
+                        margin-bottom:0;
+                        text-align: center;
+                }
+                li{
+                        width:100%;
+                        padding:0;
+                        margin-bottom: 15px;
+                }
+                @include phone{
+                        width:100%;
+                        padding:0 30px;
+                }
+        }
+        .get_it{
+                color:$highlight;
+                background-color:yellow;
+                padding:20px 30px;
+                font-family:alphaHeadline;
+                font-size:24px;
+                margin:15px 0;
+        }
+}

@@ -19,6 +19,9 @@ h2{}
 h3{}
 h4{}
 
+.ssblcok{
+        font-family:ssBlock;
+}
 @mixin data-header{
         font-family:data;
         font-size:80px;
@@ -72,8 +75,14 @@ strong{
 h1{
         font-family:alphaHeadline;
         font-size:32px;
-        margin-bottom: 20px;
         line-height:50px;
+        max-width:900px;
+        @include phone{
+                margin-bottom: 20px;
+        }
+        @include tablet{
+                margin-bottom:60px;
+        }
 }
 h2{
         font-family:alphaHeadline;
@@ -103,6 +112,19 @@ p{
                 line-height: 47px;
         }
 }
+// li{
+//         font-size:20px;
+//         line-height: 32px; 
+//         hyphens:none;
+//         @include phone{
+//                 font-size:16px;
+//                 line-height: 30px;
+//         }
+//         @include big-desktop{
+//                 font-size:24px;
+//                 line-height: 47px;
+//         }
+// }
 a:hover{
         color:$highlight;
 }
