@@ -26,7 +26,7 @@
                         <ul>
                                 <li><a href="/martians">Coaches</a></li>
                                 <li><a href="/syllabus">Syllabus</a></li>
-                                <li><a href="/mars">Mars</a></li>
+                                <li><a href="/about">About</a></li>
                                 <li><a href="/form">Contact</a></li>
                                 <li><a href="https://mars-radio-cyber-arts.myshopify.com/46291353767/checkouts/7d9ddda8f9ff9317d523160e2982c93a">Get It Now</a></li>
                         </ul>

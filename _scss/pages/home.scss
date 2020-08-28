@@ -7,14 +7,16 @@
                 @include flexbox();
                 @include flex-direction(column);
                 @include align-items(center);
-                @include phone{
-                        padding-top:40px;
-                }
-                @include tablet{
-                        padding:40px 0;
-                }
-                @include desktop{
-                        padding:80px 40px;
+                &:not(:first-child){
+                        @include phone{
+                                padding-top:40px;
+                        }
+                        @include tablet{
+                                padding:40px 0;
+                        }
+                        @include desktop{
+                                padding:80px 0px;
+                        }
                 }
         }
         p{
@@ -28,12 +30,13 @@
                 padding:0 30px;
                 text-align: center;
                 margin-top:20px;
+                max-width:900px;
         }
         h2{
                 text-align: center;
                 text-transform: uppercase;
                 @include phone{
-                        margin:35px 0 15px;
+                        margin:15px 0 30px;
                         padding:0 30px;
                 }
                 @include tablet{
@@ -60,32 +63,17 @@
                         }
                 }
         }
-        .home-banner{
-                background-image:url('/img/banner.jpg');
-                background-size: cover;
-                @include justify-content(center);
-
-                @include phone{
-                        height:400px;
-                        h2{
-                                strong{
-                                        font-size:40px;
-                                        line-height:60px;
-                                }
+        .img-container{
+                position:relative;
+                max-width: 900px;
+                img{
+                        object-fit:cover;
+                        width:100%;
+                        @include tablet{
+                                margin-bottom:60px;
                         }
-                        span{
-                                line-height: 50px;
-                        }
-                }
-                @include tablet{
-                        height: 700px;
-                        h2 strong{
-                                font-family:data;
-                                font-size:80px;
-                                line-height: 100px;
-                        }
-                        span{
-                                line-height: 100px;
+                        @include phone{
+                                margin-bottom:25px;
                         }
                 }
         }
@@ -174,14 +162,40 @@
                 @include phone{
                         width:100%;
                         padding:0 30px;
+                        p{
+                                padding:5px 0;
+                                line-height: 26px;
+                                font-size:15px;
+                        }
                 }
         }
         .get_it{
-                color:$highlight;
-                background-color:yellow;
-                padding:20px 30px;
+                color:$white;
                 font-family:alphaHeadline;
                 font-size:24px;
-                margin:15px 0;
+                margin:15px 20px;
+                text-align:center;
+                line-height:40px;
+                border-bottom:10px solid #191766;
+                background-color:#332DCD;
+                transition:all 0.5s ease;
+                text-shadow:0 -2px #191766;
+                border-radius:10px;
+                &:hover{
+                        cursor:pointer;
+                        background-color:darken(#332DCD, 10%);
+                }
+                @include tablet{
+                        padding:25px 30px 20px;
+                }
+                @include phone{
+                        @include flexbox();
+                        @include flex-direction(column);
+                        padding:15px 20px 10px;
+                        font-size: 20px;
+                        span{
+                                width:100%;
+                        }
+                }
         }
 }
