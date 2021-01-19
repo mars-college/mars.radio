@@ -7,33 +7,6 @@
         @include flexbox();
         @include flex-direction(column);
         @include justify-content(center);
-        h1{
-                text-align: center;
-                max-width:800px;
-                font-size:40px;
-                line-height:50px;
-                max-width:900px;
-                letter-spacing:0.03em;
-                @include phone{
-                        font-size:30px;
-                        line-height:42px;
-                }
-        }
-        h2{
-                max-width:1200px;
-                @include data-header;
-        }
-        h2 span{
-                font-family:data;
-        }
-        h3{
-                font-size:30px;
-                font-family:alphaHeadlineBold;
-                text-transform: uppercase;
-                @include phone{
-                        font-size:22px;
-                }
-        }
         section{
                 @include flexbox();
                 @include flex-direction(column);
@@ -54,6 +27,21 @@
         @include phone{
                 overflow:hidden;
         }
+        p{
+                @include tablet{
+                        max-width:960px;
+                        padding:0 40px;
+                }
+        }
+        h2{
+                @include data-xl();
+                @include phone{
+                        margin-bottom:20px;
+                }
+                @include tablet{
+                        margin-bottom:40px;
+                }
+        }
         /* ~~~~~~~~~~~~~~~~~~~~
         ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ^ˆ
               I N T R O
@@ -63,33 +51,22 @@
                 background-color:$black;
                 color:$white;
                 @include background-image('/img/textures/crystals.jpg');
+                h1,
+                p{
+                        background-color:rgba(0, 0, 0, 0.5);
+                        box-shadow:0 0 10px 10px rgba(0, 0, 0, 0.5); 
+                        text-align: center;
+                        margin-bottom:40px;
+                }
+                h1{
+                        @include header-xxl();
+                }
+                p{
+                        @include paragraph-xl();
+                }
                 .video{
                         width:100%;
                         max-width:800px;
-                }
-                // Highlighted text illusion
-                // Embed span nd give it a bg (highlight) color 
-                // (opt) Add box shadow
-                h1 span,
-                p span{
-                        background-color:rgba(0, 0, 0, 0.5);
-                        box-shadow:0 0 10px 10px rgba(0, 0, 0, 0.5); 
-                }
-                h1,p{
-                        padding:0 5%;
-                }
-                p{
-                        text-align: center;
-                        letter-spacing: 0.03em;
-                        margin-bottom: 5%;
-                        @include p-large();
-                }
-                @include phone{
-                        h1 span,
-                        p span{
-                                background-color:rgba(0, 0, 0, 0.5);
-                                box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.5); 
-                        }
                 }
         }
         .splash_lessons{
@@ -97,6 +74,9 @@
                 h2{
                         color:$white;
                         text-shadow:7px 7px $black;
+                }
+                h3{
+                        @include header-m();
                 }
                 ul{
                         @include flexbox();
@@ -112,11 +92,6 @@
                                 &:nth-of-type(4n + 1){
                                         color:$black;
                                         background-color:$white;
-                                        // background: #f475f4; /* Old browsers */
-                                        // background: -moz-linear-gradient(-45deg, #f475f4 0%, #7db9e8 100%); /* FF3.6-15 */
-                                        // background: -webkit-linear-gradient(-45deg, #f475f4 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-                                        // background: linear-gradient(135deg, #f475f4 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f475f4', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
                                         p{ 
                                                 opacity:1;
                                                 background-color:transparent;
@@ -177,7 +152,6 @@
                                                 position:absolute;
                                                 top:9%; left:9%;
                                                 z-index:50;
-                                                letter-spacing:0.03em;
                                         }
                                         p{      
                                                 position:absolute;
@@ -193,42 +167,37 @@
                 }
         }
        
-        .splash_becomeamartian{
+        .splash-becomeamartian{
                 @include background-image("/img/textures/neon.jpg");
                 min-height:70vh;
                 h2 { 
-                        letter-spacing: 0.03em;
                         text-align: justify;
+                        text-transform: uppercase;
                         @include tablet{
                                 font-size:150px;
-                                line-height:200px;
+                                line-height:170px;
                                 text-shadow: 4px 4px $pink;
                         }
                         @include phone{
+                                font-size:100px;
+                                line-height: 115px;
                                 text-shadow: 2px 2px $pink;
                         }
                 }
                 p{
-                        @include p-large();
-                        @include tablet{
-                                 padding-left:200px;
-                        }
+                        @include paragraph-xl();
                 }
                 .splash_becomeamartian_btn{
                         @include tablet{
                                 margin-bottom:60px;
-                                margin-left:500px;
                         }
                 }
         }
-        .splash_about{
+        .splash-about{
                 @include background-image("/img/textures/mars.jpg");
-                h2{
-                }
                 p{
-                        max-width:800px;
                         text-align:center;
-                        @include p-large();
+                        @include paragraph-xl();
                 }
                 
         }

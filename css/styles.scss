@@ -19,6 +19,14 @@ html, body{
 body > article{
        margin-top:$headerHeight;
 }
+.image-container{
+        position:relative;
+        img{
+                object-fit: cover;
+                width:100%;
+                height:100%;
+        }
+}
 @import 'pages/splash.scss';
 @import 'pages/syllabus.scss';
 @import 'pages/faq.scss';

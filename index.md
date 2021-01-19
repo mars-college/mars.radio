@@ -4,8 +4,8 @@ title: Cyber Arts Camp
 ---
 <article id="Splash">
         <section class="splash_intro">
-                <h1><span>Learn cutting edge technology and sustainability through art.</span></h1>
-                <p><span>The Martians have landed. We're setting up a civilization based on sustainability, technology, and art. We need YOUR help designing solar-powered light structures to use on our Martian planet. Are you ready to join us on this intergalactic mission?</span></p>
+                <h1>Learn cutting edge technology and sustainability through art.</h1>
+                <p>The Martians have landed. We're setting up a civilization based on sustainability, technology, and art. We need YOUR help designing solar-powered light structures to use on our Martian planet. Are you ready to join us on this intergalactic mission?</p>
                 <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/DJ8ixhwwvYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -57,12 +57,12 @@ title: Cyber Arts Camp
                         </li>
                 </ul>
         </section>
-        <section class="splash_becomeamartian">
+        <section class="splash-becomeamartian">
                 <h2><span>Ready to</span><br/><span>become a</span><br/><span>Martian?</span></h2>
                 <p>Interested in our upcoming light sculpture course ? Mars Radio is currently looking for new students across the galaxy to join the Martians. Sign up here to stay updated on course start date & registration.</p>
                 <a class="splash_becomeamartian_btn btn btn-large btn-black" href="/form">Contact Us</a>
         </section>
-        <section class="splash_about">
+        <section class="splash-about">
                 <h2>We're the Martians</h2>
                 <p>Mars Radio is an educational platform built from the collective knowledge of a cooperative of artists, technologists, and explorers. Our knowledge spans across many fields, from sustainable off-grid living to up-and-coming technologies. This educational program is an invitation for you to join us, to help us harness these powerful tools to improve your community.</p>
         </section>

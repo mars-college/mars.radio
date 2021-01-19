@@ -3,6 +3,9 @@ $outlineinverse:-5px;
 #Syllabus{
         background-color:$white;
         height:100%;
+        h2{
+                @include header-m();
+        }
         .calendar{
                 @include flexbox();
                 @include flex-direction(column);
@@ -67,7 +70,6 @@ $outlineinverse:-5px;
                                 date{
                                         font-family: alphaHeadline;
                                         text-transform:uppercase;
-                                        @include small();
                                 }
                         }
                         h2{

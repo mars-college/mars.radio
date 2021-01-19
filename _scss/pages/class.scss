@@ -136,8 +136,12 @@
                         @include text_element_padding();
                         text-align: center;
                         margin-bottom:0; //default reset
+                        @include header-l();
                         @include phone{
-                                font-size:24px;
+                                line-height:50px;
+                        }
+                        @include tablet{
+                            line-height:50px;    
                         }
                 }
         }
@@ -154,16 +158,19 @@
                         @include flexbox();
                         @include align-items(center);
                         @include flex-direction(column);
-                        @include big-desktop{
-                                max-width:1000px !important;
-                        }
-                        @include tablet{
-                                //padding:0 100px;
-                                max-width:760px;
-                        }
                         @include phone{
                                 h2{
                                         padding:0 40px;
+                                }
+                        }
+                        @include tablet{
+                                h2{
+                                      max-width:760px;  
+                                }
+                        }
+                        @include big-desktop{
+                                h2{
+                                       max-width:1000px;  
                                 }
                         }
                 }
@@ -181,13 +188,7 @@
                 letter-spacing: 0.02em;
                 border-bottom: 1px dotted $black;
                 margin-bottom:20px;
-                @include phone{
-                        font-size:14px;
-                        line-height: 30px;
-                }
-                @include big-desktop{
-                        font-size:18px;
-                }
+                @include header-xxs();
         }
         .video,
         .class-code{
@@ -200,13 +201,6 @@
                 width:100%;
                 li{
                         width:100%;
-                        font-size:20px;
-                        line-height: 32px;
-                        hyphens:none;
-                        @include phone{
-                                font-size:16px;
-                                line-height: 30px;
-                        }
                 }
                 li p{
                         display:inline;
@@ -296,7 +290,7 @@
                         h3{
                                 position:absolute;
                                 transition:all 0.5s ease;
-                                color:$highlight;
+                                color:$black;
                                 border-bottom:none;
                                 font-size:50px;
                                 text-transform: uppercase;
@@ -319,7 +313,6 @@
                                 height: 100%;
                                 line-height: 260px;
                                 text-align: center;
-                                font-weight: bold;
                                 font-size: 40px;
                                 -webkit-backface-visibility: hidden;
                                 backface-visibility: hidden;
@@ -355,15 +348,6 @@
                                 padding:10px 50px;
                                 -webkit-transform: rotateX(180deg);
                                 transform: rotateX(180deg);
-                                p{
-                                        font-family: sourceSansProLight;
-                                        font-size:26px;
-                                        line-height: 40px;
-                                        @include phone{
-                                                font-size:16px;
-                                                line-height:30px;
-                                        }
-                                }
                         }
                }
         }

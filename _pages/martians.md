@@ -6,7 +6,9 @@ title: Cyber Arts Camp
 <article id="Martians">
         <ul>
                 <li>
-                        <img src="/img/coaches/ji.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/ji.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Ji</h2>
                                 <span>earth</span>
@@ -14,7 +16,9 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coaches/alice.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/alice.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Alice</h2>
                                 <span>planet europe</span>
@@ -22,7 +26,9 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coaches/kir.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/kir.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Kir</h2>
                                 <span>planet dikhroos</span>
@@ -30,7 +36,9 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coaches/cos.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/cos.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Cos</h2>
                                 <span>planet disco</span>
@@ -38,7 +46,9 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coaches/disco_cat.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/disco_cat.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Disco Cat</h2>
                                 <span>planet disco</span>
@@ -46,7 +56,9 @@ title: Cyber Arts Camp
                         </div>
                 </li>
                 <li>
-                        <img src="/img/coaches/gene.jpg">
+                        <div class="image-container">
+                                <img src="/img/coaches/gene.jpg">
+                        </div>
                         <div class="text">
                                 <h2>Gene</h2>
                                 <span>planet fractopia</span>

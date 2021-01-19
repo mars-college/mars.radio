@@ -2,8 +2,9 @@
         @include flexbox();
         @include flex-direction(column);
         @include background-image('/img/textures/stars.jpg');
-        h1{
-                @include data-header;
+        background-color:$black;
+        h2{
+                @include header-m();
         }
         ul{
                 @include flexbox();
@@ -33,24 +34,30 @@
                         span{
                                 margin-bottom:15px;
                         }
-                        img{
-                                max-width:100%;
+                        .image-container{
+                                width:100%;
+                                @include phone{
+                                        max-height:550px;
+                                        img{
+                                                object-position: 0 20%;
+                                        }
+                                }
+                                @include tablet{
+                                        max-height: 550px;
+                                }
                         }
+                        // img{
+                        //         max-width:100%;
+                        // }
                 }
         }
         @include tablet{
                 padding:8% 0.5%;
-                li{
-                       
+                li{ 
                         width:33.33%;
-                }
-                
+                } 
         }
         @include phone{
                 padding:8% 10px;
-                li{
-                        // @include flexbox();
-                        // @include flex-direction(row);
-                }
         }
 }
